@@ -51,7 +51,7 @@ class Customer extends Person
     private function setPassword($newPassword){
         $this->password = $newPassword;        
     }
-    public function setAddress($newAddress){
+    public function setAddress(Address $newAddress){
         $this->address = $newAddress;
     }
 
@@ -148,7 +148,7 @@ class Cart
         }
     }
 
-    function setShippingAddress($address){
+    function setShippingAddress(Address $address){
         $this->shippingpAddress = $address;
     }
 }
