@@ -21,12 +21,12 @@ class Customer extends Person
     private function setPassword($newPassword){
         $this->password = $newPassword;        
     }
-    public function setAddress(Address $newAddress){
+    public function setAddress($newAddress){
 
-        if ($newAddress != Adress){
-            throw new Exception('Indirizzo inserito non è valido', 666,)
+        if ($newAddress !== Address){
+            throw new Exception('Indirizzo inserito non è valido', 666,);
         }
-        return $this->address = $newAddress;
+         $this->address = $newAddress;
     }
 
     public function setCardNumber($cardNumber){
