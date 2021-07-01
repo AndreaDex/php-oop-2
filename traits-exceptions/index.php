@@ -19,6 +19,8 @@ $customers=[
 $a->setAddress($customerAddress);
 var_dump($a);
  */
+
+//var_dump($customerAddress);
 ?>
 
 <!DOCTYPE html>
